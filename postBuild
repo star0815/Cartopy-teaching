@@ -1,0 +1,3 @@
+#!/bin/bash
+# 预下载 Cartopy 常用的基础地理特征数据
+python -c "import cartopy.feature as cfeature; cfeature.COASTLINE; cfeature.BORDERS; cfeature.LAND; cfeature.OCEAN"
