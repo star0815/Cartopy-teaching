@@ -1,25 +1,14 @@
 name: ocean-analysis-env
 channels:
-  - conda-forge  # 强烈建议使用 conda-forge 频道，科学计算库在此频道最全且兼容性好
+  - conda-forge
   - defaults
 dependencies:
-  - python=3.12  # 指定稳定的 Python 版本
-  - jupyter      # 提供 Notebook 交互环境
-  
-  # 核心数据处理库
-  - numpy        # 基础数值计算
-  - pandas       # 结构化数据处理
-  - xarray       # 处理多维数组和 NetCDF 文件的核心库
-  
-  # 地理空间与可视化库
-  - cartopy      # 核心地图库（会自动安装 GEOS, PROJ 等底层依赖）
-  - matplotlib   # 绘图基础库
-  
-  # 海洋数据底层依赖
-  - netcdf4      # 读写 NetCDF 格式文件的核心库
-  - h5netcdf     # 另一个常用的 NetCDF 读写库，建议一并安装以防兼容性问题
-  
-  - pip          # 备用包管理器
-  - pip: 
-  # 如果有些包在 conda-forge 找不到，可以放在这里
-    # - argopy   # 例如：如果后续想加入 NOAA 推荐的 argopy 库，可以直接写在这里或 conda 列表中
+  - python=3.12
+  - jupyter
+  - numpy
+  - pandas
+  - xarray
+  - cartopy
+  - matplotlib
+  - netcdf4
+  - h5netcdf
