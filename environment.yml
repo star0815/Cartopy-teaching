@@ -20,5 +20,6 @@ dependencies:
   - h5netcdf     # 另一个常用的 NetCDF 读写库，建议一并安装以防兼容性问题
   
   - pip          # 备用包管理器
-  - pip:         # 如果有些包在 conda-forge 找不到，可以放在这里
+  - pip: 
+  # 如果有些包在 conda-forge 找不到，可以放在这里
     # - argopy   # 例如：如果后续想加入 NOAA 推荐的 argopy 库，可以直接写在这里或 conda 列表中
